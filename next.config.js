@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  env: {
+    BASE_URL: process.env.BASE_URL,
+    IMAGE_URL: process.env.IMAGE_URL,
+  },
 
-module.exports = nextConfig
+  images: {
+    domains: ['image.tmdb.org'],
+  },
+};
+
+module.exports = nextConfig;
